@@ -37,8 +37,7 @@ const friends = ["Rika", "Jenna", "Bleda", "Oliver", "Itamar"];
 
 const filterItems = (array, string) => {
     const item = array.filter(function(arrayItem) {
-        if (arrayItem.includes(string)) {return true}
-        return false;
+        return arrayItem.includes(string);
     })
     return item;
 };
@@ -63,4 +62,4 @@ const squareRoot = (array) => {
     return sqrt;
 };
 
-console.log('6:', squareRoot([9, 16, 25, 36, 81]));
+console.log('6:', squareRoot([9, 16, 25, 36, 81])); // returns: [ 3, 4, 5, 6, 9 ]
